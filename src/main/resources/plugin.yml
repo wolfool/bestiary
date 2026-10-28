@@ -1,0 +1,23 @@
+name: Bestiary
+version: '2.0.1'
+main: com.wolfool.bestiary.BestiaryPlugin
+api-version: '1.21'
+author: wolfool
+description: 보스 몹을 창에서 고칩니다 — 체력 · 피해 · 드랍 · 스폰 알
+
+# MythicMobs 파일을 읽고 씁니다. 없으면 아무것도 못 읽으므로 소프트 의존으로 둡니다.
+softdepend:
+  - MythicMobs
+  - CraftEngine
+
+commands:
+  bestiary:
+    description: 보스 몹 관리
+    usage: /<command> [낱말|리로드]
+    aliases: [보스, 몹관리]
+    permission: bestiary.admin
+
+permissions:
+  bestiary.admin:
+    description: 보스를 고칠 수 있습니다
+    default: op

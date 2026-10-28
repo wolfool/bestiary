@@ -1,0 +1,21 @@
+# Gradle
+.gradle/
+build/
+
+# IDE
+.idea/
+*.iml
+*.ipr
+*.iws
+.vscode/
+out/
+bin/
+
+# 로컬 테스트 서버
+run/
+server/
+testserver/
+
+# OS
+Thumbs.db
+.DS_Store
